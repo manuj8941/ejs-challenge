@@ -1,0 +1,17 @@
+<%- include ("partials/header.ejs"); -%>
+
+    <h1>Home</h1>
+    <p><%=homeStartingContent%></p>
+
+
+
+<%  composedPostS.forEach((item)=>{     %>
+<h4><%=item.postTitle%></h4>
+
+<p><%=item.postBody%></p>
+<% });                                %>
+
+
+
+
+<%- include ("partials/footer.ejs"); -%>
