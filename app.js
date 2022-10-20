@@ -76,53 +76,60 @@ app.listen( 3000 || process.env.PORT, function ()
 } );
 
 
-// var h = '<%- include ("D:/projects/ejs-challenge/views/partials/header.ejs"); -%> <p>';
-  // var t = req.body.postText;
-  // var f = '</p><%- include ("D:/projects/ejs-challenge/views/partials/footer.ejs"); -%>';
-  // var tt = h + t + f;
 
 
-  // fs.writeFile( __dirname + "/views/user/title.ejs", tt, function ( err )
-  // {
-  //   if ( err ) throw err;
-  //   console.log( 'File is created successfully.' );
-  // } );
+/*
 
-  // setTimeout( function () { res.render( __dirname + "/views/user/title.ejs" ); }, 3000 );
-
+var h = '<%- include ("D:/projects/ejs-challenge/views/partials/header.ejs"); -%> <p>';
+    var t = req.body.postText;
+  var f = '</p><%- include ("D:/projects/ejs-challenge/views/partials/footer.ejs"); -%>';
+  var tt = h + t + f;
 
 
+  fs.writeFile( __dirname + "/views/user/title.ejs", tt, function ( err )
+  {
+    if ( err ) throw err;
+    console.log( 'File is created successfully.' );
+  } );
+
+  setTimeout( function () { res.render( __dirname + "/views/user/title.ejs" ); }, 3000 );
 
 
-  //comment
-  // if ((req.params.postURL).toString().toLowerCase() === (composedPostS[ i ].postTitle).toString().toLowerCase())
+
+
+
+  comment
+  if ((req.params.postURL).toString().toLowerCase() === (composedPostS[ i ].postTitle).toString().toLowerCase())
 
 
   
-// app.get( "/posts/:postURL", ( req, res ) =>
-// {
-//   for ( i = 0; i < composedPostS.length; i++ )
-//   {
-//     if ( _.lowerCase( req.params.postURL ) === _.lowerCase( composedPostS[ i ].postTitle ) )
-//     {
-//       console.log( "Match found" );
+app.get( "/posts/:postURL", ( req, res ) =>
+{
+  for ( i = 0; i < composedPostS.length; i++ )
+  {
+    if ( _.lowerCase( req.params.postURL ) === _.lowerCase( composedPostS[ i ].postTitle ) )
+    {
+      console.log( "Match found" );
 
-//       var h = '<%- include ("partials/header.ejs"); -%><h1>';
-//       var p1 = composedPostS[ i ].postTitle + '</h1>' + '<p>';
-//       var p2 = composedPostS[ i ].postBody + '</p>';
-//       var f = '<%- include ("partials/footer.ejs"); -%>';
-//       var cP = h + p1 + p2 + f;
+      var h = '<%- include ("partials/header.ejs"); -%><h1>';
+      var p1 = composedPostS[ i ].postTitle + '</h1>' + '<p>';
+      var p2 = composedPostS[ i ].postBody + '</p>';
+      var f = '<%- include ("partials/footer.ejs"); -%>';
+      var cP = h + p1 + p2 + f;
 
-//       fs.writeFile( __dirname + "/views/post.ejs", cP, function ( err )
-//       {
-//         if ( err ) throw err;
-//         console.log( "File is created successfully." );
-//       } );
+      fs.writeFile( __dirname + "/views/post.ejs", cP, function ( err )
+      {
+        if ( err ) throw err;
+        console.log( "File is created successfully." );
+      } );
 
-//       setTimeout( () =>
-//       {
-//         res.render( "post.ejs" );
-//       }, 3000 );
-//     }
-//   }
-// } );
+      setTimeout( () =>
+      {
+        res.render( "post.ejs" );
+      }, 3000 );
+    }
+  }
+} );
+
+
+*/
